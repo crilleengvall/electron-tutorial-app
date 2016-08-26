@@ -6,9 +6,19 @@
 
 /* Button */
 
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="text"],
+button,
+textarea {
+	-webkit-app-region: no-drag;
+}
+
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
+	input[type="text"],
 	button,
 	.button {
 		@include vendor('appearance', 'none');
@@ -34,6 +44,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		-webkit-app-region: no-drag;
 
 		&:after {
 			@include vendor('transform', 'scale(0.25)');

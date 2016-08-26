@@ -14,6 +14,7 @@
 	// MSIE: Prevents scrollbar from overlapping content.
 		body {
 			-ms-overflow-style: scrollbar;
+			-webkit-app-region:drag;
 		}
 
 	// Ensures page width is always >=320px.
