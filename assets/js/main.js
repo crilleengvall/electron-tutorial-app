@@ -146,7 +146,7 @@
 			});
 
 		// Spotlights.
-			$('.spotlights > section')
+			/*$('.spotlights > section')
 				.scrollex({
 					mode: 'middle',
 					top: '-10vh',
@@ -182,7 +182,7 @@
 					// Hide <img>.
 						$img.hide();
 
-				});
+				});*/
 
 		// Features.
 			if (skel.canUse('transition'))
