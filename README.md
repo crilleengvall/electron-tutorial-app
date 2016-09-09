@@ -14,3 +14,6 @@ http://www.christianengvall.se/electron-app-navigation/
 
 ######04 - Electron frameless window - A frameless window is a window that has no chrome, the parts of the window, like toolbars, that are not a part of the web page :
 http://www.christianengvall.se/electron-frameless-window/
+
+######05 - Electron white screen app startup - This post will cover how to fix the electron white screen app startup :
+http://www.christianengvall.se/electron-white-screen-app-startup/
