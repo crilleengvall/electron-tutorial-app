@@ -10,13 +10,26 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({titleBarStyle: 'hidden', width: 1281, height: 800, minWidth: 1281, minHeight: 800})
+  mainWindow = new BrowserWindow({titleBarStyle: 'hidden',
+    width: 1281,
+    height: 800,
+    minWidth: 1281,
+    minHeight: 800,
+    backgroundColor: '#312450',
+    show: false
+  })
+
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`)
 
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
+
+  // Show the mainwindow when it is loaded and ready to show
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show()
+  })
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
