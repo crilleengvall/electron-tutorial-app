@@ -1,6 +1,6 @@
 ![Electron tutorial app](http://www.christianengvall.se/wp-content/uploads/2016/08/electron-titlebarhidden.png "Electron tutorial app")
 # Electron tutorial app
-An electron application for tutorials 
+An electron application for tutorials
 
 ## Tutorials
 ######01 - Hello world tutorial - Get electron running on your computer:
@@ -17,3 +17,9 @@ http://www.christianengvall.se/electron-frameless-window/
 
 ######05 - Electron white screen app startup - This post will cover how to fix the electron white screen app startup :
 http://www.christianengvall.se/electron-white-screen-app-startup/
+
+######06 - Electron app icons - Adding icons to the app :    
+http://www.christianengvall.se/electron-app-icons/
+
+######07 - Electron packager tutorial - Creating packages for mac, windows and linux :    
+http://www.christianengvall.se/electron-app-icons/
