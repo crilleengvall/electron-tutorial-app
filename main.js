@@ -16,7 +16,8 @@ function createWindow () {
     minWidth: 1281,
     minHeight: 800,
     backgroundColor: '#312450',
-    show: false
+    show: false,
+    icon: 'assets/icons/png/1024x1024.png'
   })
 
 
