@@ -1,5 +1,10 @@
 {
-  "name"    : "electron-tutorial-app",
-  "version" : "0.1.0",
-  "main"    : "main.js"
+  "name": "electron-tutorial-app",
+  "productName": "Electron tutorial app",
+  "version": "0.1.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^1.4.3",
+    "electron-packager": "^8.1.0"
+  }
 }
