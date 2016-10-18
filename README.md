@@ -22,4 +22,4 @@ http://www.christianengvall.se/electron-white-screen-app-startup/
 http://www.christianengvall.se/electron-app-icons/
 
 ######07 - Electron packager tutorial - Creating packages for mac, windows and linux :    
-http://www.christianengvall.se/electron-app-icons/
+http://www.christianengvall.se/electron-packager-tutorial/
