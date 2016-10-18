@@ -1,4 +1,5 @@
 const electron = require('electron')
+var path = require('path')
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
@@ -17,7 +18,7 @@ function createWindow () {
     minHeight: 800,
     backgroundColor: '#312450',
     show: false,
-    icon: 'assets/icons/png/1024x1024.png'
+    icon: path.join(__dirname, 'assets/icons/png/1024x1024.png')
   })
 
 
