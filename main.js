@@ -4,6 +4,7 @@ var path = require('path')
 const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
+//Adds the main Menu to our app
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -40,6 +41,8 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+
+  require('./menu/mainmenu')
 }
 
 // This method will be called when Electron has finished
