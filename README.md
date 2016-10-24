@@ -23,3 +23,6 @@ http://www.christianengvall.se/electron-app-icons/
 
 ######07 - Electron packager tutorial - Creating packages for mac, windows and linux :    
 http://www.christianengvall.se/electron-packager-tutorial/
+
+######08 - Electron menu - Adding a main menu to your Electron app :    
+http://www.christianengvall.se/electron-menu/    
