@@ -1,93 +1,74 @@
 const {Menu} = require('electron')
 const electron = require('electron')
 const app = electron.app
+var i18n = new(require('../translations/i18n'))
 
 const template = [
   {
-    label: 'Edit',
+    label: i18n.__('Edit'),
     submenu: [
       {
-        role: 'undo'
+        role: 'undo', label: i18n.__('Undo')
       },
       {
-        role: 'redo'
+        role: 'redo', label: i18n.__('Redo')
       },
       {
         type: 'separator'
       },
       {
-        role: 'cut'
+        role: 'cut', label: i18n.__('Cut')
       },
       {
-        role: 'copy'
+        role: 'copy', label: i18n.__('Copy')
       },
       {
-        role: 'paste'
+        role: 'paste', label: i18n.__('Paste')
       },
       {
-        role: 'pasteandmatchstyle'
+        role: 'delete', label: i18n.__('Delete')
       },
       {
-        role: 'delete'
-      },
-      {
-        role: 'selectall'
+        role: 'selectall', label: i18n.__('Select all')
       }
     ]
   },
   {
-    label: 'View',
+    label: i18n.__('View'),
     submenu: [
       {
-        label: 'Reload',
-        accelerator: 'CmdOrCtrl+R',
-        click (item, focusedWindow) {
-          if (focusedWindow) focusedWindow.reload()
-        }
+        role: 'resetzoom', label: i18n.__('Actual size')
       },
       {
-        label: 'Toggle Developer Tools',
-        accelerator: process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I',
-        click (item, focusedWindow) {
-          if (focusedWindow) focusedWindow.webContents.toggleDevTools()
-        }
+        role: 'zoomin', label: i18n.__('Zoom in')
+      },
+      {
+        role: 'zoomout', label: i18n.__('Zoom out')
       },
       {
         type: 'separator'
       },
       {
-        role: 'resetzoom'
-      },
-      {
-        role: 'zoomin'
-      },
-      {
-        role: 'zoomout'
-      },
-      {
-        type: 'separator'
-      },
-      {
-        role: 'togglefullscreen'
+        role: 'togglefullscreen', label: i18n.__('Toggle fullscreen')
       }
     ]
   },
   {
-    role: 'window',
+    role: 'window', label: i18n.__('Window'),
     submenu: [
       {
-        role: 'minimize'
+        role: 'minimize', label: i18n.__('Minimize')
       },
       {
-        role: 'close'
+        role: 'close', label: i18n.__('Close')
       }
     ]
   },
   {
-    role: 'help',
+    role: 'help', label: i18n.__('Help'),
     submenu: [
       {
-        label: 'Learn More',
+        label: i18n.__('Learn more'),
         click () { require('electron').shell.openExternal('https://github.com/crilleengvall/electron-tutorial-app') }
       }
     ]
@@ -100,73 +81,71 @@ if (process.platform === 'darwin') {
     label: name,
     submenu: [
       {
-        role: 'about'
+        role: 'about', label: i18n.__('About') + " " + app.getName()
       },
       {
         type: 'separator'
       },
       {
-        role: 'services',
+        role: 'services', label: i18n.__('Services'),
         submenu: []
       },
       {
         type: 'separator'
       },
       {
-        role: 'hide'
+        role: 'hide', label: i18n.__('Hide') + " " + app.getName()
       },
       {
-        role: 'hideothers'
+        role: 'hideothers', label: i18n.__('Hide others')
       },
       {
-        role: 'unhide'
+        role: 'unhide', label: i18n.__('Unhide')
       },
       {
         type: 'separator'
       },
       {
-        role: 'quit'
+        role: 'quit', label: i18n.__('Quit') + " " + app.getName()
       }
     ]
   })
-  // Edit menu.
   template[1].submenu.push(
     {
       type: 'separator'
     },
     {
-      label: 'Speech',
+      label: i18n.__('Speech'),
       submenu: [
         {
-          role: 'startspeaking'
+          role: 'startspeaking', label: i18n.__('Start speaking')
         },
         {
-          role: 'stopspeaking'
+          role: 'stopspeaking', label: i18n.__('Stop speaking')
         }
       ]
     }
   )
-  // Window menu.
   template[3].submenu = [
     {
-      label: 'Close',
+      label: i18n.__('Close'),
       accelerator: 'CmdOrCtrl+W',
       role: 'close'
     },
     {
-      label: 'Minimize',
+      label: i18n.__('Minimize'),
       accelerator: 'CmdOrCtrl+M',
       role: 'minimize'
     },
     {
-      label: 'Zoom',
+      label: i18n.__('Zoom'),
       role: 'zoom'
     },
     {
       type: 'separator'
     },
     {
-      label: 'Bring All to Front',
+      label: i18n.__('Bring all to front'),
       role: 'front'
     }
   ]

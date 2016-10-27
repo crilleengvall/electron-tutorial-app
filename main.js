@@ -22,7 +22,6 @@ function createWindow () {
     icon: path.join(__dirname, 'assets/icons/png/64x64.png')
   })
 
-
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`)
 
