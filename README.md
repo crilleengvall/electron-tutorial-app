@@ -26,3 +26,6 @@ http://www.christianengvall.se/electron-packager-tutorial/
 
 ######08 - Electron menu - Adding a main menu to your Electron app :    
 http://www.christianengvall.se/electron-menu/    
+
+######09 - Electron localization - Translating an Electron app :    
+http://www.christianengvall.se/electron-localization/
