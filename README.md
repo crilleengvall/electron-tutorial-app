@@ -29,3 +29,6 @@ http://www.christianengvall.se/electron-menu/
 
 ######09 - Electron localization - Translating an Electron app :    
 http://www.christianengvall.se/electron-localization/
+
+######10 - Main process and Renderer process in Electron - A simple explanation :    
+http://www.christianengvall.se/main-and-renderer-process-in-electron/
