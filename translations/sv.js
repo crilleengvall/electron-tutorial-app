@@ -30,7 +30,7 @@
   "Bring all to front": "Flytta fram alla",
 	"Welcome": "Välkommen",
 	"Hopefully this helps someone to get up to speed with electron.": "Förhoppningsvis hjälper detta någon att komma igång med electron",
-	"Who we are": "Om oss",
+	"Who we are": "IPC/Remote",
 	"What we do": "Vår verksamhet",
 	"Get in touch": "Kontakta oss",
 	"Learn more": "Läs mer"

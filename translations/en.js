@@ -30,7 +30,7 @@
 	"Bring all to front": "Bring all to front",
 	"Welcome": "Welcome",
 	"Hopefully this helps someone to get up to speed with electron.": "Hopefully this helps someone to get up to speed with electron.",
-	"Who we are": "Who we are",
+	"Who we are": "IPC/Remote",
 	"What we do": "What we do",
 	"Get in touch": "Get in touch",
 	"Learn more": "Learn more"

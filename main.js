@@ -1,4 +1,5 @@
 const electron = require('electron')
+const {ipcMain} = require('electron')
 var path = require('path')
 // Module to control application life.
 const app = electron.app
@@ -9,6 +10,7 @@ const BrowserWindow = electron.BrowserWindow
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
+let secondWindow
 
 function createWindow () {
   // Create the browser window.
@@ -28,6 +30,7 @@ function createWindow () {
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
 
+
   // Show the mainwindow when it is loaded and ready to show
   mainWindow.once('ready-to-show', () => {
     mainWindow.show()
@@ -41,8 +44,28 @@ function createWindow () {
     mainWindow = null
   })
 
+  secondWindow = new BrowserWindow({titleBarStyle: 'hidden',
+    width: 800,
+    height: 600,
+    minWidth: 800,
+    minHeight: 600,
+    backgroundColor: '#312450',
+    show: false,
+    icon: path.join(__dirname, 'assets/icons/png/64x64.png')
+  })
+
+  secondWindow.loadURL(`file://${__dirname}/windows/ipcwindow.html`)
+
   require('./menu/mainmenu')
 }
+
+ipcMain.on('open-second-window', (event, arg)=> {
+    secondWindow.show()
+})
+
+ipcMain.on('close-second-window', (event, arg)=> {
+    secondWindow.hide()
+})
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
