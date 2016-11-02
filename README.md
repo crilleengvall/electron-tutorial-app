@@ -32,3 +32,6 @@ http://www.christianengvall.se/electron-localization/
 
 ######10 - Main process and Renderer process in Electron - A simple explanation :    
 http://www.christianengvall.se/main-and-renderer-process-in-electron/
+
+######11 - IPCMain and IPCRenderer - Communicating between main and renderer process :    
+http://www.christianengvall.se/main-and-renderer-process-in-electron/
