@@ -44,7 +44,7 @@ function createWindow () {
     mainWindow = null
   })
 
-  secondWindow = new BrowserWindow({titleBarStyle: 'hidden',
+  secondWindow = new BrowserWindow({frame: false,
     width: 800,
     height: 600,
     minWidth: 800,
