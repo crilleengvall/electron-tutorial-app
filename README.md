@@ -37,5 +37,5 @@ http://www.christianengvall.se/main-and-renderer-process-in-electron/
 http://www.christianengvall.se/ipcmain-and-ipcrenderer/
 
 
-######11 - Electron asar - packaging the app with asar :    
+######12 - Electron asar - packaging the app with asar :    
 http://www.christianengvall.se/electron-asar/
