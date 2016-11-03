@@ -1,4 +1,4 @@
-![Electron tutorial app](http://www.christianengvall.se/wp-content/uploads/2016/08/electron-titlebarhidden.png "Electron tutorial app")
+![Electron tutorial app](http://www.christianengvall.se/wp-content/uploads/2016/11/Electron-tutorial-app-with-ipc.png "Electron tutorial app")
 # Electron tutorial app
 An electron application for tutorials
 
