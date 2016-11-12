@@ -41,3 +41,6 @@ http://www.christianengvall.se/electron-asar/
 
 ######13 - DMG Installer - creating a DMG-installer for macOS:    
 http://www.christianengvall.se/dmg-installer-electron-app/
+
+######14 - Windows installer - creating a windows installer with electron-winstaller    
+http://www.christianengvall.se/electron-windows-installer/
