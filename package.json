@@ -4,6 +4,7 @@
   "description": "Application for electron tutorials",
   "version": "0.1.0",
   "main": "main.js",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^1.4.5",
     "electron-installer-dmg": "^0.1.2",
