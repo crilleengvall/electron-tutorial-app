@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "main": "main.js",
   "license": "MIT",
+  "author": "Christian Engvall",
   "devDependencies": {
     "electron": "^1.4.5",
     "electron-installer-dmg": "^0.1.2",
