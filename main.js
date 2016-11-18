@@ -59,7 +59,8 @@ function createWindow () {
     minHeight: 600,
     backgroundColor: '#312450',
     show: false,
-    icon: path.join(__dirname, 'assets/icons/png/64x64.png')
+    icon: path.join(__dirname, 'assets/icons/png/64x64.png'),
+    parent: mainWindow
   })
 
   secondWindow.loadURL(`file://${__dirname}/windows/ipcwindow.html`)
