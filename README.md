@@ -23,3 +23,4 @@ This post contains [installation instructions](https://www.christianengvall.se/i
 | 12 | [Electron asar](http://www.christianengvall.se/electron-asar/) | Packaging the app with asar |
 | 13 | [DMG Installer](http://www.christianengvall.se/dmg-installer-electron-app/) | Creating a DMG-installer for macOS |
 | 14 | [Windows installer](http://www.christianengvall.se/electron-windows-installer/) | Creating a windows installer with electron-winstaller |
+| 15 | [Debian package installer](https://www.christianengvall.se/electron-installer-debian-package/) | Create a debian package |
