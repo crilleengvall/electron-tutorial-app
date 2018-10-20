@@ -2,12 +2,13 @@
   "name": "electron-tutorial-app",
   "productName": "Electron tutorial app",
   "description": "Application for electron tutorials",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "main": "main.js",
   "license": "MIT",
   "author": "Christian Engvall",
   "devDependencies": {
     "electron": "^3.0.5",
+    "electron-installer-debian": "^1.0.0",
     "electron-installer-dmg": "^2.0.0",
     "electron-packager": "^12.2.0",
     "electron-winstaller": "^2.4.1"
