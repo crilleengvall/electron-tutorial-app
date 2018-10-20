@@ -14,7 +14,7 @@ function(n) {
       },
 
       outputSelectedPathsFromOpenDialog: function(paths) {
-        alert(paths);
+        alert('user selected: ' + paths);
       },
 
       init: function() {
