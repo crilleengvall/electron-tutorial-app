@@ -10,6 +10,7 @@ const electron = require('electron')
 const app = electron.app
 const {ipcMain} = require('electron')
 var path = require('path')
+require('./dialog/dialog')
 
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
