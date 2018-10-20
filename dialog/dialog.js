@@ -17,3 +17,7 @@ ipcMain.on('show-open-dialog', (event, arg)=> {
       event.sender.send('open-dialog-paths-selected', filePaths)
     });
 })
+
+ipcMain.on('show-error-box', (event, arg) => {
+  dialog.showErrorBox('Oops! Something went wrong!', 'Help us improve your experience by sending an error report')
+});

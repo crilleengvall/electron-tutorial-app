@@ -25,4 +25,4 @@ This post contains [installation instructions](https://www.christianengvall.se/i
 | 14 | [Windows installer](http://www.christianengvall.se/electron-windows-installer/) | Creating a windows installer with electron-winstaller |
 | 15 | [Debian package installer](https://www.christianengvall.se/electron-installer-debian-package/) | Create a debian package |
 | 16 | [Update to latest Electron version](https://www.christianengvall.se/update-to-latest-electron-version/) | Update electron to the latest version using npm |
-| 17 | [Dialogs](https://www.christianengvall.se/electron-dialog-tutorial/) | Display dialogs with electron, [showOpenDialog](https://www.christianengvall.se/electron-showopendialog-tutorial/ "showOpenDialog") |
+| 17 | [Dialogs](https://www.christianengvall.se/electron-dialog-tutorial/) | Display dialogs with electron: [showOpenDialog](https://www.christianengvall.se/electron-showopendialog-tutorial/ "showOpenDialog"), [showErrorBox](https://www.christianengvall.se/electron-showerrorbox-tutorial/ "showErrorBox") |
