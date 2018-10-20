@@ -8,10 +8,9 @@
   "author": "Christian Engvall",
   "devDependencies": {
     "electron": "^3.0.5",
-    "electron-installer-debian": "^1.0.0",
     "electron-installer-dmg": "^2.0.0",
     "electron-packager": "^12.2.0",
-    "electron-winstaller": "^2.4.1"
+    "electron-winstaller": "^2.7.0"
   },
   "repository": {
     "type": "git",
