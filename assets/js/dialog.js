@@ -17,9 +17,17 @@ function(n) {
         alert('user selected: ' + paths);
       },
 
+      showErrorBox: function() {
+        ipcRenderer.send('show-error-box');
+      },
+
       init: function() {
         $('#showOpendialog').click( function () {
           dialog.handler.showOpenDialog();
+        })
+
+        $('#showErrorBox').click( function () {
+          dialog.handler.showErrorBox();
         })
       }
     };
