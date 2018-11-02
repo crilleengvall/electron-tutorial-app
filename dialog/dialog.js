@@ -21,3 +21,20 @@ ipcMain.on('show-open-dialog', (event, arg)=> {
 ipcMain.on('show-error-box', (event, arg) => {
   dialog.showErrorBox('Oops! Something went wrong!', 'Help us improve your experience by sending an error report')
 });
+
+ipcMain.on('show-message-box', (event, arg) => {
+  const options = {
+      type: 'question',
+      buttons: ['Cancel', 'Yes, please', 'No, thanks'],
+      defaultId: 2,
+      title: 'Question',
+      message: 'Do you want to do this?',
+      detail: 'It does not really matter',
+      checkboxLabel: 'Remember my answer',
+      checkboxChecked: true,
+    };
+
+    dialog.showMessageBox(null, options, (response, checkboxChecked) => {
+      event.sender.send('show-message-box-response', [response, checkboxChecked]);
+    });
+});
