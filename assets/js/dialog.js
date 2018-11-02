@@ -4,6 +4,10 @@ ipcRenderer.on('open-dialog-paths-selected', (event, arg)=> {
   dialog.handler.outputSelectedPathsFromOpenDialog(arg);
 })
 
+ipcRenderer.on('show-message-box-response', (event, args) => {
+  dialog.handler.outputMessageboxResponse(args);
+})
+
 window.dialog = window.dialog || {},
 function(n) {
 
@@ -17,8 +21,16 @@ function(n) {
         alert('user selected: ' + paths);
       },
 
+      outputMessageboxResponse: function(args) {
+        alert('user selected button index: ' + args[0] + '. Should remember answer value is: ' + args[1]);
+      },
+
       showErrorBox: function() {
         ipcRenderer.send('show-error-box');
+      },
+
+      showMessageBox: function() {
+        ipcRenderer.send('show-message-box');
       },
 
       init: function() {
@@ -28,6 +40,10 @@ function(n) {
 
         $('#showErrorBox').click( function () {
           dialog.handler.showErrorBox();
+        })
+
+        $('#showMessageBox').click( function() {
+          dialog.handler.showMessageBox();
         })
       }
     };
