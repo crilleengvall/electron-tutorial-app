@@ -1,4 +1,4 @@
-const { ipcMain, dialog } = require('electron')
+const { ipcMain, dialog, app } = require('electron')
 
 ipcMain.on('show-open-dialog', (event, arg)=> {
 
@@ -38,3 +38,13 @@ ipcMain.on('show-message-box', (event, arg) => {
       event.sender.send('show-message-box-response', [response, checkboxChecked]);
     });
 });
+
+ipcMain.on('show-save-dialog', (event, arg) => {
+  const options = {
+    title: 'Save current page as a pdf',
+    defaultPath: app.getPath('documents') + '/electron-tutorial-app.pdf',
+  }
+  dialog.showSaveDialog(null, options, (path) => {
+    console.log(path);
+  });
+})
