@@ -33,6 +33,10 @@ function(n) {
         ipcRenderer.send('show-message-box');
       },
 
+      showSaveDialog: function() {
+        ipcRenderer.send('show-save-dialog');
+      },
+
       init: function() {
         $('#showOpendialog').click( function () {
           dialog.handler.showOpenDialog();
@@ -44,6 +48,10 @@ function(n) {
 
         $('#showMessageBox').click( function() {
           dialog.handler.showMessageBox();
+        })
+
+        $('#showSaveDialog').click( function() {
+          dialog.handler.showSaveDialog();
         })
       }
     };
