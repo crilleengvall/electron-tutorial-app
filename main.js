@@ -10,7 +10,15 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1281, height: 800, minWidth: 1281, minHeight: 800})
+  mainWindow = new BrowserWindow({
+    width: 1281, 
+    height: 800, 
+    minWidth: 1281, 
+    minHeight: 800,
+    webPreferences: {
+      nodeIntegration: true // this brings in access to the process object for electron V5.x+
+    }
+  })
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`)

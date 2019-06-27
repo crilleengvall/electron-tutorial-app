@@ -9,14 +9,16 @@ function(n) {
       },
 
       importSectionsToDOM: function() {
-        const links = document.querySelectorAll('link[rel="import"]')
+        const links = document.querySelectorAll('a[data-section]')
         Array.prototype.forEach.call(links, function (link) {
-          let template = link.import.querySelector(navigation.menu.constants.sectionTemplate)
-          let clone = document.importNode(template.content, true)
-          document.querySelector(navigation.menu.constants.contentContainer).appendChild(clone)
+         addImport("sections/" + link.getAttribute("data-section") + ".html", null, null).then(function(importedSection) {
+           let template = importedSection.querySelector(navigation.menu.constants.sectionTemplate)
+           let clone = document.importNode(template.content, true)
+           document.querySelector(navigation.menu.constants.contentContainer).appendChild(clone)
+           })
         })
       },
-
+       
       setMenuOnClickEvent: function () {
         document.body.addEventListener('click', function (event) {
           if (event.target.dataset.section) {
