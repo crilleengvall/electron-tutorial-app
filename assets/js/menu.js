@@ -5,17 +5,22 @@ function(n) {
         sectionTemplate: '.section-template',
         contentContainer: '#wrapper',
         startSectionMenuItem: '#welcome-menu',
-        startSection: '#welcome'
+        startSection: '#welcome',
+        dataSection: 'data-section'
       },
 
       importSectionsToDOM: function() {
-        const links = document.querySelectorAll('a[data-section]')
+        const links = document.querySelectorAll(`a[${navigation.menu.constants.dataSection}]`)
+        var myMenu = this
         Array.prototype.forEach.call(links, function (link) {
-         addImport("sections/" + link.getAttribute("data-section") + ".html", null, null).then(function(importedSection) {
+         addImport("sections/" + link.getAttribute(navigation.menu.constants.dataSection) + ".html", null, null).then(function(importedSection) {
            let template = importedSection.querySelector(navigation.menu.constants.sectionTemplate)
            let clone = document.importNode(template.content, true)
            document.querySelector(navigation.menu.constants.contentContainer).appendChild(clone)
-           })
+           if ("#" + link.getAttribute(navigation.menu.constants.dataSection) == navigation.menu.constants.startSection) {
+            myMenu.showStartSection()
+           }
+          })
         })
       },
        
@@ -47,7 +52,6 @@ function(n) {
       init: function() {
         this.importSectionsToDOM()
         this.setMenuOnClickEvent()
-        this.showStartSection()
       }
     };
 
