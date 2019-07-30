@@ -7,7 +7,7 @@
   "license": "MIT",
   "author": "Christian Engvall",
   "devDependencies": {
-    "electron": "^3.0.5",
+    "electron": "^5.0.8",
     "electron-installer-dmg": "^2.0.0",
     "electron-packager": "^12.2.0",
     "electron-winstaller": "^2.7.0"
