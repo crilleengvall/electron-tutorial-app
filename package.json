@@ -2,7 +2,7 @@
   "name": "electron-tutorial-app",
   "productName": "Electron tutorial app",
   "description": "Application for electron tutorials",
-  "version": "0.1.5",
+  "version": "1.0.0",
   "main": "main.js",
   "license": "MIT",
   "author": "Christian Engvall",
