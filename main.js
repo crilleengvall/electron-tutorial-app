@@ -30,7 +30,10 @@ function createWindow () {
     minHeight: 800,
     backgroundColor: '#312450',
     show: false,
-    icon: path.join(__dirname, 'assets/icons/png/64x64.png')
+    icon: path.join(__dirname, 'assets/icons/png/64x64.png'),
+    webPreferences: {
+      nodeIntegration: true
+    }
   })
 
   // and load the index.html of the app.
@@ -61,7 +64,10 @@ function createWindow () {
     backgroundColor: '#312450',
     show: false,
     icon: path.join(__dirname, 'assets/icons/png/64x64.png'),
-    parent: mainWindow
+    parent: mainWindow,
+    webPreferences: {
+      nodeIntegration: true
+    }
   })
 
   secondWindow.loadURL(`file://${__dirname}/windows/ipcwindow.html`)
